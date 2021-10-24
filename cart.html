@@ -41,8 +41,8 @@
 
 										<div class="widget_shopping_cart_content">
 
-											<ul class="woocommerce-mini-cart cart_list product_list_widget ">
-												<li class="woocommerce-mini-cart-item mini_cart_item">
+											<ul class="woocommerce-mini-cart cart_list product_list_widget " id="buyItems">
+												<!-- <li class="woocommerce-mini-cart-item mini_cart_item">
 													<a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku="">×</a>
 													<a href="shop-product-right.html">
 														<img src="images/shop/26.jpg" alt="">Ship Your Idea
@@ -54,15 +54,15 @@
 															12.00
 														</span>
 													</span>
-												</li>
+												</li> -->
 											</ul>
 
-											<p class="woocommerce-mini-cart__total total">
-												<strong>Subtotal:</strong>
+											<p class="woocommerce-mini-cart__total total" id="sum-price">
+												<!-- <strong>Subtotal:</strong>
 												<span class="woocommerce-Price-amount amount">
 													<span class="woocommerce-Price-currencySymbol">$</span>
 													27.00
-												</span>
+												</span> -->
 											</p>
 
 											<p class="woocommerce-mini-cart__buttons buttons">
@@ -108,20 +108,22 @@
 							<div class="row isotope-wrapper masonry-layout c-mb-30">
 								<!-- blowout start -->
 
-								<div class="col-xl-4 col-md-6 blowout">
+								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Blowout</h2>
+											<h2 class="card-title productName">Blowout</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart product-under" data-product-id="1" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -131,20 +133,22 @@
 
 								</div>
 
-								<div class="col-xl-4 col-md-6 blowout">
+								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Blowout</h2>
+											<h2 class="card-title productName">Blowout</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="2" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -156,20 +160,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 blowout">
+								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Blowout</h2>
+											<h2 class="card-title productName">Blowout</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
 													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+														<button type="button" class="btn btn-default addToCart" data-product-id="3" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -181,20 +187,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 blowout">
+								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Blowout</h2>
+											<h2 class="card-title productName">Blowout</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="4" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -206,20 +214,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 blowout">
+								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Blowout</h2>
+											<h2 class="card-title productName">Blowout</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="5"class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -234,20 +244,22 @@
 								<!-- end of blowout -->
 
 								<!-- start of elit blowout -->
-								<div class="col-xl-4 col-md-6 eliteblowout">
+								<div class="col-xl-4 col-md-6 eliteblowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Elite BlowOut</h2>
+											<h2 class="card-title productName">Elite BlowOut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="6" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -259,20 +271,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 eliteblowout">
+								<div class="col-xl-4 col-md-6 eliteblowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Elite BlowOut</h2>
+											<h2 class="card-title productName">Elite BlowOut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="7" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -284,20 +298,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 eliteblowout">
+								<div class="col-xl-4 col-md-6 eliteblowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Elite BlowOut</h2>
+											<h2 class="card-title productName">Elite BlowOut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="8" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -309,20 +325,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 eliteblowout">
+								<div class="col-xl-4 col-md-6 eliteblowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Elite BlowOut</h2>
+											<h2 class="card-title productName">Elite BlowOut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="9" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -334,20 +352,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 eliteblowout">
+								<div class="col-xl-4 col-md-6 eliteblowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Elite BlowOut</h2>
+											<h2 class="card-title productName">Elite BlowOut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="10" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -361,20 +381,22 @@
 								</div>
 								<!-- end of elitblowout -->
 								<!-- start of haircut -->
-								<div class="col-xl-4 col-md-6 haircut">
+								<div class="col-xl-4 col-md-6 haircut  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Hair cut</h2>
+											<h2 class="card-title productName">Hair cut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="11" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -386,20 +408,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 haircut">
+								<div class="col-xl-4 col-md-6 haircut  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Hair cut</h2>
+											<h2 class="card-title productName">Hair cut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="12" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -411,20 +435,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 haircut">
+								<div class="col-xl-4 col-md-6 haircut  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Hair cut</h2>
+											<h2 class="card-title productName">Hair cut</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="13" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -438,20 +464,22 @@
 								</div>
 								<!-- end of haircut -->
 								<!-- startof hairtreatment -->
-								<div class="col-xl-4 col-md-6 treatment">
+								<div class="col-xl-4 col-md-6 treatment  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Treatment</h2>
+											<h2 class="card-title productName">Treatment</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="14" class="book">BOOK</button>
 													</div>
 			
 												</div>
@@ -463,20 +491,22 @@
 									</div>
 
 								</div>
-								<div class="col-xl-4 col-md-6 treatment">
+								<div class="col-xl-4 col-md-6 treatment  product-under">
 									<div class="card shadow">
 										<div class="card-body">
-											<h2 class="card-title">Treatment</h2>
+											<h2 class="card-title productName">Treatment</h2>
 											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 										</div>
 										<div class="card-body card-p">
 											<div class="row">
 												<div class="col col-mx-6">
-													<div class="price">ksh 456</div>
+													<div class="price">ksh
+														<span class="priceValue">450</span>
+													</div>
 												</div>
 												<div class="col col-xs-6">
-													<div class="book-item">
-														<button type="button" class="btn btn-default" class="book">BOOK</button>
+													<div class="book-item product-under">
+														<button type="button" class="btn btn-default addToCart" data-product-id="15"  class="book">BOOK</button>
 													</div>
 			
 												</div>

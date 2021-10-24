@@ -79,7 +79,7 @@ products.forEach(product =>{
                 id: productID,
                 count: 1,
                 price: parseInt(productPrice),
-                baseprice: +productPrice,
+                baseprice: parseInt(productPrice),
             }
 
             updateProductsInCart(productToCart);
