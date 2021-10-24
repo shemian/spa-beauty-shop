@@ -16,7 +16,9 @@
   transition: all 0.3s ease 0s;
   /* border-radius: 2px; */
   min-width: 2px;
-  padding: 15px 20px; 
+  padding: 15px 20px;
+
+  
 }
 /* .price{
     text-align: center;
