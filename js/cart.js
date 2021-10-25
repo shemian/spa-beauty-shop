@@ -19,7 +19,7 @@ const updateShoppingCartHTML= function(){
         let result=productsInCart.map(product => {
             return `
             <li class="woocommerce-mini-cart-item mini_cart_item" id="buyItems">
-                <a class="remove fa fa-trash"></a>
+                <a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku="">×</a>
                 <a>
                     <img src="images/shop/26.jpg" alt="">${product.name}
                 </a>
