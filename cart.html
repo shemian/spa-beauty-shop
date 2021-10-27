@@ -42,6 +42,7 @@
 										<div class="widget_shopping_cart_content">
 
 											<ul class="woocommerce-mini-cart cart_list product_list_widget " id="buyItems">
+												<h4 class="empty">Your shopping cart is empty</h4>
 												<!-- <li class="woocommerce-mini-cart-item mini_cart_item">
 													<a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku="">×</a>
 													<a href="shop-product-right.html">
@@ -57,17 +58,13 @@
 												</li> -->
 											</ul>
 
-											<p class="woocommerce-mini-cart__total total" id="sum-price">
-												<!-- <strong>Subtotal:</strong>
-												<span class="woocommerce-Price-amount amount">
-													<span class="woocommerce-Price-currencySymbol">$</span>
-													27.00
-												</span> -->
+											<p class="woocommerce-mini-cart__total total checkout hidden" id="sum-price">
+												
 											</p>
 
-											<p class="woocommerce-mini-cart__buttons buttons">
-												<a href="shop-cart.html" class="button wc-forward">View cart</a>
-												<a href="shop-cart.html" class="button wc-forward checkout">checkout</a>
+											<p class="woocommerce-mini-cart__buttons buttons checkout">
+												<a href="shop-cart.html" class="button wc-forward checkout hidden">View cart</a>
+												<a href="shop-cart.html" class="button wc-forward checkout checkout hidden">checkout</a>
 											</p>
 
 										</div>
@@ -152,14 +149,11 @@
 													</div>
 			
 												</div>
-											</div>
-												
-													
-											
+											</div>	
 										</div>
 									</div>
-
 								</div>
+
 								<div class="col-xl-4 col-md-6 blowout  product-under">
 									<div class="card shadow">
 										<div class="card-body">

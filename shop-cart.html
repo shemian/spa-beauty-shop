@@ -40,13 +40,9 @@
 				<div class="container">
 					<div class="row">
 						<main class="col-lg-12">
-							<div class="woocommerce-message">
-								"Premium quality" removed. <a href="#">Undo?</a>
-							</div>
+							<form class="woocommerce-cart-form" action="/" method="post" >
 
-							<form class="woocommerce-cart-form" action="/" method="post">
-
-								<table class="shop_table shop_table_responsive cart">
+								<<table class="shop_table shop_table_responsive cart" >
 									<thead>
 										<tr>
 											<th class="product-remove">&nbsp;</th>
@@ -57,8 +53,8 @@
 											<th class="product-subtotal">Total</th>
 										</tr>
 									</thead>
-									<tbody>
-										<tr class="cart_item">
+									<tbody id="buyItems">
+										<!-- <tr class="cart_item" > 
 
 											<td class="product-remove">
 												<a href="#" class="remove" aria-label="Remove this item" data-product_id="76" data-product_sku="">×</a>
@@ -87,25 +83,27 @@
 													<input type="number" class="input-text qty text" step="1" min="1" max="1000" name="quantity" value="1" title="Qty" size="4">
 													<input type="button" value="-" class="minus">
 													<i class="fa fa-angle-down" aria-hidden="true"></i>
-												</div>
+												</div> 
 											</td>
 
 											<td class="product-subtotal" data-title="Total">
 												<span class="amount">
 													<span>$</span>15.00
 												</span>
-											</td>
-										</tr>
+											</td> 
+										</tr> -->
+										
+
+									</tbody>
+									<tbody>
 										<tr>
 											<td colspan="6" class="actions">
 
 												<div class="coupon">
 													<a href="cart.html" type="button" class="button"name="update_cart" value="Update cart">&#8592; Countinue Shopping</a>
 												</div>
-
 											</td>
 										</tr>
-
 									</tbody>
 								</table>
 							</form>
@@ -116,22 +114,12 @@
 									<table class="shop_table shop_table_responsive d-table">
 
 										<tbody>
-											<tr class="cart-subtotal">
+											<tr class="cart-subtotal" id="sum-price">
 												<th>Subtotal</th>
 												<td data-title="Subtotal">
-													<span class="amount">
+													<span class="amount checkout " id="sum-price">
 														<span>$</span>45.00
 													</span>
-												</td>
-											</tr>
-											<tr class="order-total">
-												<th>Total</th>
-												<td data-title="Total">
-													<strong>
-														<span class="amount">
-															<span>$</span>45.00
-														</span>
-													</strong>
 												</td>
 											</tr>
 										</tbody>
@@ -158,8 +146,8 @@
 			
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
-
-
+	<script src="js/shop-cart.js"></script>
+	<script src="js/shop-cart.js"></script>
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/switcher.js"></script>

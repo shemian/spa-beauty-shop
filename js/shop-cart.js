@@ -1,4 +1,4 @@
-// console.log('nnc')
+ // console.log('nnc')
 let productsInCart = JSON.parse(localStorage.getItem('ShoppingCart'));
 if(!productsInCart){
     productsInCart =[];
@@ -23,37 +23,48 @@ const updateShoppingCartHTML= function(){
     if(productsInCart.length > 0){
         let result=productsInCart.map(product => {
             return `
-            <li class="woocommerce-mini-cart-item mini_cart_item" id="buyItems">
-                <a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku="">×</a>
-                <a>
-                    <img src="images/shop/26.jpg" alt="">${product.name}
-                </a>
+            <tr class="cart_item" > 
 
-                <span class="quantity">
-                    <span class="woocommerce-price-amount amount">
-                        <span class="woocommerce-price-currencySymbol">ksh</span>
-                        ${product.price}
-                    </span>
+                <td class="product-remove">
+                    
+                </td>
 
-                    <span>
-                        <button style="border: none;" class="button-minus" data-id='${product.id}'>-</button>
-                        <span class="countOfProduct">${product.count}</span>
-                        <button style="border: none;" class="button-plus" data-id='${product.id}'>+</button>
-                        
+                <td class="product-thumbnail">
+                    <a href="shop-product-right.html">
+                        <img width="180" height="180" src="images/shop/02.jpg" class="" alt="">
+                    </a>
+                </td>
+
+                <td class="product-name" data-title="Product">
+                    <a href="shop-product-right.html">${product.name}</a>
+                </td>
+
+                <td class="product-price" data-title="Price">
+                    <span class="amount">
+                        <span>ksh</span>${product.price}
                     </span>
-                </span>
-            </li>
+                </td>
+
+                <td class="product-quantity" data-title="Quantity">
+                    <div class="quantity">
+                    <button style="border: none;" class="button-minus" data-id='${product.id}'>-</button>
+                    <span class="countOfProduct">${product.count}</span>
+                    <button style="border: none;" class="button-plus" data-id='${product.id}'>+</button>
+                    </div> 
+                </td>
+
+                <td class="product-subtotal" data-title="Total">
+                    <span class="amount">
+                        <span>ksh</span>${product.price}
+                    </span>
+                </td> 
+			</tr>
             `
             
         });
         parentElement.innerHTML = result.join('');
         document.querySelector('.checkout').classList.remove('hidden')
         cartsumprice.innerHTML ="Total ksh: " + countTheSumPrice();
-
-    }else{
-        document.querySelector('.checkout').classList.add('hidden');
-        parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>'
-        cartsumprice.innerHTML ="";
 
     }
 }
@@ -69,6 +80,9 @@ function updateProductsInCart(product){
     }
     productsInCart.push(product);
 }
+
+let removeItem=document.getElementsByClassName('remove')
+
 
 
 
@@ -92,6 +106,7 @@ products.forEach(product =>{
         }
     });
 });
+
 
 parentElement.addEventListener('click', (e) => {
     const isPlusButton = e.target.classList.contains('button-plus');
